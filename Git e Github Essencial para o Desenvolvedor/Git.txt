@@ -1,0 +1,15 @@
+GIT
+! arquivo .gitignore = serve para ocultar no git arquivos declarados nele;
+    |_-> ** nome do diretório -> serve para ignorar diretórios e subdiretórios;
+! Diretórios vazios não são identificados pelos git;
+! *.extensão do arquivo = ignora qualquer arquivo com essa extensão;
+
+Comandos:
+
+- git status = verifica a situação do projeto;
+- git init = inicia o gerenciamento do projeto criando um repositório vazio;
+- git config user.name "nome" = cria no file config do diretório .git o nome do usuário;
+- git config user.email "email" == cria no file config do diretório .git o email do usuário;
+- git config --global user.name "nome"   |->
+- git config --global user.email "email" |->
+git add .arquivo = adiciona arquivo untracked(não monitorado) ao controle de monitoramento do git(tracked);
