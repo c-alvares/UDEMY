@@ -1,0 +1,47 @@
+/* 
+.conteudo {
+    border: 1px solid red;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding: 20px 15px 10px 5px;
+    padding: 20px 5px;
+    padding: auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin: 10px;
+    width: 150px;
+} */
+
+/* .conteudo2 {
+    margin: 5px;
+    width: 150px;
+    border: 1px solid red;
+} */
+
+#noticia {
+    background: #f9f9f9;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+/* O tamanho da box é composto pela sua largura + o padding*/
+/* Nesse caso é de 150px + 20px = 170px de Width */
+
+/* A margin de dois elementos é sobreposta, isto é, não se soman */
+/* Ex: margin: 10px não totaliza um espaçamento de 20px */
+/* Apenas de 10px */
+
+/* Quando um elemento entre dois distintos tem a margin maior */
+/* É utilizado o código esta margin. */
+
+/* h1,h2,h3,h4,h5,h6 já possue, margin própria. */
+/* Para tirar é só declarar margin: 0px; */
