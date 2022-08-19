@@ -1,5 +1,6 @@
-/* 
-.conteudo {
+/* AULA 40 */
+
+/* .conteudo {
     border: 1px solid red;
     padding-top: 20px;
     padding-right: 20px;
@@ -22,16 +23,15 @@
     width: 150px;
     border: 1px solid red;
 } */
-
-#noticia {
+/* #noticia {
     background: #f9f9f9;
     border: 1px solid gray;
     padding: 10px;
-}
+} */
 
-h2 {
+/* h2 {
     margin: 0px;
-}
+} */
 
 /* O tamanho da box é composto pela sua largura + o padding*/
 /* Nesse caso é de 150px + 20px = 170px de Width */
@@ -45,3 +45,49 @@ h2 {
 
 /* h1,h2,h3,h4,h5,h6 já possue, margin própria. */
 /* Para tirar é só declarar margin: 0px; */
+
+/* AULA 41 */
+
+#principal {
+    border: 5px solid red;
+    background: green;
+}
+.conteudo {
+    background: blue;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: right;
+}
+/* .conteudo1 {
+    background: red;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+} */
+.conteudo0 {
+    background: red;
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+} 
+.clear {
+    clear: both;
+}
+
+/* Com a propriedade float é possível criar um fluxo diferenciado  */
+/* que faz com que os conteúdos flutuem a esquerda ou a direita. */
+
+/* Para o conteúdo poder flutuar, é necessário que ele tenha espaço. */
+/* Isto é, caso uma box seja maior que ele, o float não consegue ficar por cima. */
+/* Ele fica "preso". */
+
+/* O elemento seguinte ao flutuante, o "enxerga" e se adapta a ele */
+/* Para limpar essa ordem é utilizado a propriedade clear no mesmo sentido do float */
+
+/* Quando utilizar float, limpar com clear o fluxo utilizando nova div */
+/* Dessa forma, o conteúdo se expande e empurra a div*/
