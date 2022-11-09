@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos (static, relative, absolute, fixed)</title>
+    <style type="text/css">
+        
+        body {
+            background: #007fc7;
+        }
+        
+        #container {
+            background: #fff;
+            width: 800px;
+            margin: 10px auto;
+            /* a margem direita e esquerda será ajustada automaticamente, de forma responsiva */
+            padding: 10px;
+        }
+
+        h1 {
+            position: static;
+        }
+
+        p {
+            position: static;
+            width: 300px;
+        }
+
+        .relative {
+            border: 1px solid red;
+            position: relative;
+            top: 20px;
+            left: 80px;
+            right: 0px;
+            bottom: -10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Posicionamentos</h1>
+
+        <p>
+            P1 Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. 
+            Donec id sem gravida,
+            consectetur augue ut, molestie lorem.
+            Donec condimentum erat at sapien
+            volutpat malesuada.
+        </p>
+        <p class="relative">
+            P2 Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. 
+            Donec id sem gravida,
+            consectetur augue ut, molestie lorem.
+            Donec condimentum erat at sapien
+            volutpat malesuada.
+        </p>
+        <p>
+            P3 Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. 
+            Donec id sem gravida,
+            consectetur augue ut, molestie lorem.
+            Donec condimentum erat at sapien
+            volutpat malesuada.
+        </p>
+    </div>
+</body>
+</html>
+<!-- Fluxo padrão de documento, são os elementos do tipo bloco, alinhados a esquerda um abaixo do outro -->
+<!-- O posicionamento padrão é o estático -->
+<!-- Quando utilizamos posicionamento relativo, precisamos utilizar propriedades de deslocamento para movimentar o elemento -->
+<!-- Os elementos são top, right, bottom e left -->
+<!-- As movimentações ocorrem baseadas na posição inicial, de referência do fluxo padrão -->
