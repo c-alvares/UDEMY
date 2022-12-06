@@ -1,21 +1,21 @@
-GIT
-! arquivo .gitignore = serve para ocultar no git arquivos declarados nele;
-    |_-> ** nome do diretório -> serve para ignorar diretórios e subdiretórios;
-! Diretórios vazios não são identificados pelos git;
-! *.extensão do arquivo = ignora qualquer arquivo com essa extensão;
+____GIT____<br>
+! arquivo .gitignore = serve para ocultar no git arquivos declarados nele;<br>
+    |_-> ** nome do diretório -> serve para ignorar diretórios e subdiretórios;<br>
+! Diretórios vazios não são identificados pelos git;<br>
+! *.extensão do arquivo = ignora qualquer arquivo com essa extensão;<br>
 
-ESTÁGIOS
-untracked = Não monitorado;
-tracked = Monitorado;
-modified = Modificado;
-staged = Alocado;
+____ESTÁGIOS____<br>
+untracked = Não monitorado;<br>
+tracked = Monitorado;<br>
+modified = Modificado;<br>
+staged = Alocado;<br>
 
-COMMIT
+____COMMIT____<br>
 É o envio ou submissão de arquivos que estão "tracked" para o estágio "staged", isto é, prontos para envio para o "branch" principal. 
 É também chamado de snapshot.
 
 
-COMANDOS:
+____COMANDOS:____
 - git status = verifica a situação do projeto;
 - git init = inicia o gerenciamento do projeto criando um repositório vazio;
 -----
@@ -34,12 +34,12 @@ COMANDOS:
 - git log = dá acesso a todo histórico de commits realizados e seus hashID's. Se colocar -nº, por exemplo, -2, aparecerá os (n)dois últimos commits;
 - /informaçãoDesejada = busca no log a informação caso o espaço do terminal seja insuficiente para visualizar (:). Por exemplo: /html;
 - b -> volta;
-- q -> sai do log;
-!! HEAD -> master indica o mais recente commit.
+- q -> sai do log; <br>
+!! HEAD -> master indica o mais recente commit.<br>
 !! Quando é feito o commit, aparece apenas os sete primeiros caracteres do hashID.
 -----
-- git config core.pager cat = alteração local para ver todos os logs independentemente do tamanho do terminal. 
-!! Para virar global é só colocar a flag --global antes do core.
+- git config core.pager cat = alteração local para ver todos os logs independentemente do tamanho do terminal. <br>
+!! Para virar global é só colocar a flag --global antes do core.<br>
 - git config core.pager less = volta a ser compatível com o tamanho do terminal;
 - clear = limpa o terminal;
 - git log --oneline = apresenta os logs são apresentados de forma simplificada;
@@ -60,16 +60,16 @@ COMANDOS:
 - git diff 3959fal = compara o último commit feito com o referenciado pelo hashID. Pressionar "q" para sair;
 - git diff ce2573d..2455385 = compara a diferença de um commit até o outro. A ordem é do +antigo para o +novo;
 -----
-. Situação de mensagem do commit incorreta e se deseja corrigir":
+____Situação de mensagem do commit incorreta e se deseja corrigir":____
 - git commit -- amend -m "Mensagem correta" = 
 . Realizado um commit, mas lembra-se que precisava adicionar um novo arquivo naquele commit:
     1) Adicione o arquivo para ser monitorado:
-- git add .arquivo.extensão;
+- git add .arquivo.extensão;<br>
     2) Realize o commit com o seguinte comando:
-- git commit --amend -m "mensagem para sobrescrever a do último commit";
+- git commit --amend -m "mensagem para sobrescrever a do último commit";<br>
 !! O mesmo vale se precisarmos modificar um arquivo já commitado e quisermos incluí-lo no commit anterior.
 -----
-. Após adicionar um arquivo, diretório, é possível retirá-lo de "staged" com o seguinte comando:
+____Após adicionar um arquivo, diretório, é possível retirá-lo de "staged" com o seguinte comando:____
 - git restore --staged arquivo.extensão;
 - git checkout arquivo.extensão = retorna o arquivo específico para o commit anterior;
 - git reset HEAD --hard = reseta as alterações para o commiut HEAD. O comando har é usado para sobrescrever. É como checkout mas é geral.
