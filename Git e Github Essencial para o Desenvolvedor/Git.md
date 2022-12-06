@@ -88,9 +88,9 @@ ____Sessão Intermediária____
 - Ctrl + L = limpa o terminal
 
 - git merge nome_da_branch = concatena, junta os arquivos, pastas, alterações realizadas em uma branch com a master
-!!! Para verificar informações após o merge, usar o "git log". 
-!!! Pode-se deletar a branch após o merge, utilizando o -d.
-!!!Na hora do merge, podem ocorrer conflitos. Quando duas pessoas commitarem alterações no mesmo arquivo, isso ocorrerá.
+!! Para verificar informações após o merge, usar o "git log". 
+!! Pode-se deletar a branch após o merge, utilizando o -d.
+!! Na hora do merge, podem ocorrer conflitos. Quando duas pessoas commitarem alterações no mesmo arquivo, isso ocorrerá.
 
 - git rebase = refaz, remonta a base, isto é, ele junta, similarmente ao "merge", mas diferentemente, ele realoca a "base".
 - git checkout -b nome_da_branch = cria uma branch e muda para ela.
