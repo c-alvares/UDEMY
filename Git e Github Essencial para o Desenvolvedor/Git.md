@@ -85,6 +85,7 @@ ____Sessão Intermediária____
 !!! Para deletar uma branch é necessário estar em outra branch.
 
 - ls = mostra os arquivos/pastas no "Local Storage" armazenamento local
+- ls -la = mostra os arquivos/pastas incluindo os ocultos no "Local Storage"
 - Ctrl + L = limpa o terminal
 
 - git merge nome_da_branch = concatena, junta os arquivos, pastas, alterações realizadas em uma branch com a master
@@ -94,3 +95,48 @@ ____Sessão Intermediária____
 
 - git rebase = refaz, remonta a base, isto é, ele junta, similarmente ao "merge", mas diferentemente, ele realoca a "base".
 - git checkout -b nome_da_branch = cria uma branch e muda para ela.
+
+- pwd = mostra no terminal o caminho da pasta/diretório que se está.
+
+- git clone /caminho_do_repositório_que_quer_clonar . = clona o repositório desejado dentro do diretório.
+
+- touch nome_do_arquivo.extensão = cria novo arquivo através do terminal.
+
+- git fetch = baixa as atualizações (commits) de um repositório remoto mas não as aplica no repositório local, ou seja, não faz o "merge". Dessa forma, permite fazer um "rebase" de um branch ao invés de fazer um "merge".
+!! Verifique os arquivos com ls. Os arquivos do "fetch não irão aparecer".
+!! Após o fetch, é só relizar o rebase (case não tenha branch, é só digitar "git fetch")
+-git pull = é o fetch + rebase
+
+!! É aberto um editor de texto. Pode ser escrito uma mensagem do que está sendo feito
+- Ctrl + O = grava as alterações no editor de texto. Apertar "ENTER" para salvar
+- Ctrl + X = sai do editor
+OU
+- Ctrl + C = para iniciar fechamento
+- qa: = para voltar ao terminal
+
+!! Repositório Bare : O git é decentralizado. Cada repositório do git é um nó na rede. Toda via, ao se trabalhar principalmente com médios e grandes projetos, é possível definir um repositório com uma central, onde os desenvolvedores, cada um com seu repositório local, submete os códigos/dados. Um exemplo disso de repositório bare é o GitHub.
+
+- git init --bare = cria um repositório vazio com vários diretórios. Não é um .git oculto, ele é um pouco diferente. Como se fosse o conteúdo do .git só que direatamente na pasta. Esse é o bare repositorie. Ele serve de centralizador.
+
+- git push = envia os commits para central, para o repositório remoto (bare).
+
+!! Caso você clone um repositório e não realize a configuração de usuário e email, você terá erro na hora de commitar. (À menos que já esteja configurado um usuário global na máquina).
+!! Para verificar, é só acessar o diretório .git. Dentro dele, utilizar o comando:
+- cat config = mostra as configurações do git
+
+!! Tags podem ser criadas para definir versões estáveis do projeto. Tags são "entregáveis" do projeto. Ou seja, cada parte do projeto pode ser entregue de forma separada e testado pelo cliente. É semelhante a branchs, mas ao contrário destas, as tags não podem receber novos commits. É gerado uma versão pronta para uso, ainda que incompleta. É definido o estado do repositório.
+- git tag nomde_da_tag = cria a tag, sem dar retorno
+- git tag = mostra a tag
+
+!! Para mandar para o repositório central(bare), tem que ser realizado um push:
+- git push origin(local a ser enviado) v1.0(nome_da_tag).
+
+!! O origin é o repositório de origem, o remoto.
+!! Para verificar a tag v1.0 é só executar o comando:
+- git checkout nome_da_tag
+
+!! Nese caso só é possível verificar as situação, sem realizar novos commits e alterações. Após a verificação, é só realizar o checkout para master novamente.
+
+- git switch -c nome_da_nova_branch = Caso queira manter os commits da tag, é necessário criar uma nova branch usando esse comando com -c junto do switch.
+
+!! Após a criação da nova branch e realizadas as alterações (criação de arquivo por exemplo), é só adicionar e commitar. Deve-se realizar o checkout para master e fazer o merge. Após isso pode-se adicionar uma nova tag, e então realizar o push para o repositório remoto, para o "origin".
