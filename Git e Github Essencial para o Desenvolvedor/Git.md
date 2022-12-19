@@ -139,4 +139,42 @@ OU
 
 - git switch -c nome_da_nova_branch = Caso queira manter os commits da tag, é necessário criar uma nova branch usando esse comando com -c junto do switch.
 
-!! Após a criação da nova branch e realizadas as alterações (criação de arquivo por exemplo), é só adicionar e commitar. Deve-se realizar o checkout para master e fazer o merge. Após isso pode-se adicionar uma nova tag, e então realizar o push para o repositório remoto, para o "origin".
+!! Após a criação da nova branch e realizadas as alterações (criação de arquivo por exemplo), é só adicionar e commitar. Deve-se realizar o checkout para master e fazer o merge. Após isso pode-se adicionar uma nova tag, e então realizar o push para o repositório remoto, para o "origin".<br>
+-----
+____Sessão Avançada____<br>
+<br>
+Após a criação de um repositório no GitHub, siga os seguintes passo:<br>
+1) Crie um diretório localmente, com o mesmo nome do repositório.
+2) Crie um arquivo README.md com as informações que desejar(Sugerido # Nome do repositório).
+3) No terminal:<br>
+
+3.1) git init
+3.2) git config user.name "usuario"
+3.3) git config user.email "usario@email.com"
+3.4) git add README.md
+3.5) git commit -m "mensagem_desejada"
+3.6) git remote add origin https://github.com/user/repositorio.git
+3.7) git push -u origin master
+<br>
+Explicando os comandos acima:
+a) No diretório é inicializado o repositório git, ou seja, começa a ser monitorado.
+b) É configurado o usuário e email
+c) É adicionado o arquivo markdown README
+d) É feito o commit
+e) É registrado o repositório no GitHub localmente. Isto é, do repositório local, submeter código para o repositório remoto. A origem do repositório bare é o link do repositório no GitHub.
+
+f) Executa-se o upstream push(upando para o repositório remoto), passando o nome do repositório (origin) e o nome da branch (master).
+<br>
+!! Caso na máquina não esteja configurado o usuário globalmente, será solicitado o usuário e senha do github.com toda vez que for realizado um push.
+<br>
+- git config credential.helper store = É adicionada uma nova configuração no arquivo de config, para esse projeto. Ou seja, na próxima vez que for feito um push e ser solicitado o usuário e senha, o git salva esses dados e não será necessário informá-los novamente.
+!! NÃO é recomendado realizar autenticação conforme o indicado acima pois a senha é armazenada em configurações do git no formato de texto.
+
+<br>
+!! Ao recarregar a página do projeto no GitHub, o arquivo README.md estará upado.
+
+- git remote -v = verifica se há algum repositório remoto registrado. Geralmente, aparecem duas linhas com nome de origin(nome padrão escolhido, é recomendado). É mostrado o endereço, e utilizado tanto para "fetch" quanto para "push".
+
+- git clone https://github.com/usuario/repositorio.git = clona o repositório remoto do GitHub.
+- git pull origin(nome_do_repositório) master(nome_da_branch)
+
