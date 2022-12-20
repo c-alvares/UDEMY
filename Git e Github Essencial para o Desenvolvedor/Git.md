@@ -212,6 +212,7 @@ f) Executa-se o upstream push(upando para o repositório remoto), passando o nom
 - git clone https://github.com/usuario/repositorio.git = clona o repositório remoto do GitHub.
 - git pull origin(nome_do_repositório) master(nome_da_branch)
 
+-----
 !! Caso sejam feitas modificações nos arquivos, diretórios do repositório local e estas NÃO FORAM ADICIONADAS ao monitoramento do Git, é possível ELIMINAR essas modificações sem que seja necessário apagar/modificar um arquivo por vez. É só realizar um checkout:
 
 - git checkout -- . = volta todos os arquivos ao estado original do commit.
@@ -221,3 +222,8 @@ f) Executa-se o upstream push(upando para o repositório remoto), passando o nom
 
 - git checkout HEAD -- . = tira todos os arquivos adicionados ao monitoramento do git e retorna para a HEAD do commit, excluindo as modificações feitas.
 - git checkout HEAD -- arquivo.formato = tira o arquivo específico do monitoramento e retorna para a HEAD do commit.
+
+-----
+- git revert commitId(8 dígitos) = Cria um novo commit desfazendo as alterações do commit especificado. Não é desfeito o commit, ele continua registrado no log. É feito um novo sem as mudanças e registrado como "REVERT"
+
+- git reset HEAD~1(o número indica quantos commits deseja-se resetar) = remove o commit. O commit referido não aparecerá mais no log
