@@ -1,4 +1,5 @@
 ____GIT____<br>
+-----
 ! arquivo .gitignore = serve para ocultar no git arquivos declarados nele;<br>
     |_-> ** nome do diretório -> serve para ignorar diretórios e subdiretórios;<br>
 ! Diretórios vazios não são identificados pelos git;<br>
@@ -148,28 +149,25 @@ Após a criação de um repositório no GitHub, siga os seguintes passo:<br>
 2) Crie um arquivo README.md com as informações que desejar(Sugerido # Nome do repositório).
 3) No terminal:<br>
 
-3.1) git init
-3.2) git config user.name "usuario"
-3.3) git config user.email "usario@email.com"
-3.4) git add README.md
-3.5) git commit -m "mensagem_desejada"
-3.6) git remote add origin https://github.com/user/repositorio.git
-3.7) git push -u origin master
-<br>
+3.1) git init<br>
+3.2) git config user.name "usuario"<br>
+3.3) git config user.email "usario@email.com"<br>
+3.4) git add README.md<br>
+3.5) git commit -m "mensagem_desejada"<br>
+3.6) git remote add origin https://github.com/user/repositorio.git<br>
+3.7) git push -u origin master<br>
+
 Explicando os comandos acima:
-a) No diretório é inicializado o repositório git, ou seja, começa a ser monitorado.
-b) É configurado o usuário e email
-c) É adicionado o arquivo markdown README
-d) É feito o commit
-e) É registrado o repositório no GitHub localmente. Isto é, do repositório local, submeter código para o repositório remoto. A origem do repositório bare é o link do repositório no GitHub.
-
+a) No diretório é inicializado o repositório git, ou seja, começa a ser monitorado.<br>
+b) É configurado o usuário e email<br>
+c) É adicionado o arquivo markdown README<br>
+d) É feito o commit<br>
+e) É registrado o repositório no GitHub localmente. Isto é, do repositório local, submeter código para o repositório remoto. A origem do repositório bare é o link do repositório no GitHub.<br>
 f) Executa-se o upstream push(upando para o repositório remoto), passando o nome do repositório (origin) e o nome da branch (master).
-<br>
-!! Caso na máquina não esteja configurado o usuário globalmente, será solicitado o usuário e senha do github.com toda vez que for realizado um push.
-<br>
-- git config credential.helper store = É adicionada uma nova configuração no arquivo de config, para esse projeto. Ou seja, na próxima vez que for feito um push e ser solicitado o usuário e senha, o git salva esses dados e não será necessário informá-los novamente.
-!! NÃO é recomendado realizar autenticação conforme o indicado acima pois a senha é armazenada em configurações do git no formato de texto.
 
+!! Caso na máquina não esteja configurado o usuário globalmente, será solicitado o usuário e senha do github.com toda vez que for realizado um push.<br>
+- git config credential.helper store = É adicionada uma nova configuração no arquivo de config, para esse projeto. Ou seja, na próxima vez que for feito um push e ser solicitado o usuário e senha, o git salva esses dados e não será necessário informá-los novamente.<br>
+!! NÃO é recomendado realizar autenticação conforme o indicado acima pois a senha é armazenada em configurações do git no formato de texto.
 <br>
 !! Ao recarregar a página do projeto no GitHub, o arquivo README.md estará upado.
 
@@ -178,3 +176,12 @@ f) Executa-se o upstream push(upando para o repositório remoto), passando o nom
 - git clone https://github.com/usuario/repositorio.git = clona o repositório remoto do GitHub.
 - git pull origin(nome_do_repositório) master(nome_da_branch)
 
+!! Caso sejam feitas modificações nos arquivos, diretórios do repositório local e estas NÃO FORAM ADICIONADAS ao monitoramento do Git, é possível ELIMINAR essas modificações sem que seja necessário apagar/modificar um arquivo por vez. É só realizar um checkout:
+
+- git checkout -- . = volta todos os arquivos ao estado original do commit.
+- git checkout -- arquivo.formato(ex: text.txt) = volta apenas o arquivo mencionado ao estado original do último commit.
+
+!! Caso sejam feitas modificações nos arquivos, diretórios do repositório local e estas FORAM ADICIONADAS ao monitoramento do Git é só dar o seguinte commando:
+
+- git checkout HEAD -- . = tira todos os arquivos adicionados ao monitoramento do git e retorna para a HEAD do commit, excluindo as modificações feitas.
+- git checkout HEAD -- arquivo.formato = tira o arquivo específico do monitoramento e retorna para a HEAD do commit.
