@@ -227,3 +227,22 @@ f) Executa-se o upstream push(upando para o repositório remoto), passando o nom
 - git revert commitId(8 dígitos) = Cria um novo commit desfazendo as alterações do commit especificado. Não é desfeito o commit, ele continua registrado no log. É feito um novo sem as mudanças e registrado como "REVERT"
 
 - git reset HEAD~1(o número indica quantos commits deseja-se resetar) = remove o commit. O commit referido não aparecerá mais no log
+
+-----
+<br>
+
+____Resolução de Conflitos____
+
+1) SE ACALME, RESPIRE, TOME UMA ÁGUA E VAMOS LÁ!
+
+2) Os conflitos podem ocorrer em situações que o repositório local, teve modificações em diretórios, arquivos e não foi atualizado(feito o pull) em relação ao diretório remoto, como exemplo, o GitHub.
+
+3) Caso as modificações sejam iguais, isto é, foi realizado uma alteração na linha 50 do arquivo exemplo.txt em ambos os repositórios (local e remoto), haverá um conflito.
+
+4) O próprio Git abre e indica os conflitos, sendo apenas necessário analisar qual alteração irá manter.
+
+5) É possível aceitar, a atual(local), a incoming(remota), ambas ou comparar as mudanças(nessa opção, são visualizadas as diferenças entre o arquivo local e o remoto, sem a possibilidade de alteração). 
+
+6) O merge pode ser feito direto pelo arquivo, ou pelo "editor merge". Nele, é apresentado o arquivo remoto, o local e um terceiro de como ficará o merge. 
+
+7) Caso as modificações sejam em arquivos diferentes, o push do commit do repositório local será rejeitado. Isso ocorre porque o local estará mais antigo em relação ao remoto. MAS, não haverá conflito quando for feito o pull, justamente por serem alterações em arquivos distintos.
