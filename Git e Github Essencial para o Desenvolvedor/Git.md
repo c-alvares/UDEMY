@@ -173,6 +173,8 @@ OU
 
 !! Após a criação da nova branch e realizadas as alterações (criação de arquivo por exemplo), é só adicionar e commitar. Deve-se realizar o checkout para master e fazer o merge. Após isso pode-se adicionar uma nova tag, e então realizar o push para o repositório remoto, para o "origin".
 
+-----
+
 <br>
 
 ____Sessão Avançada____
@@ -206,6 +208,9 @@ f) Executa-se o upstream push(upando para o repositório remoto), passando o nom
 
 !! NÃO é recomendado realizar autenticação conforme o indicado acima pois a senha é armazenada em configurações do git no formato de texto.
 
+- git config --global --unset credential.helper = serve para remover as credenciais globais(usuário e senha).
+- git config --unset credential.helper = serve para remover as credenciais locais.
+
 !! Ao recarregar a página do projeto no GitHub, o arquivo README.md estará upado.
 
 - git remote -v = verifica se há algum repositório remoto registrado. Geralmente, aparecem duas linhas com nome de origin(nome padrão escolhido, é recomendado). É mostrado o endereço, e utilizado tanto para "fetch" quanto para "push".
@@ -224,9 +229,9 @@ f) Executa-se o upstream push(upando para o repositório remoto), passando o nom
 - git checkout HEAD -- arquivo.formato = tira o arquivo específico do monitoramento e retorna para a HEAD do commit.
 
 -----
-- git revert commitId(8 dígitos) = Cria um novo commit desfazendo as alterações do commit especificado. Não é desfeito o commit, ele continua registrado no log. É feito um novo sem as mudanças e registrado como "REVERT"
+- git revert commitId(8 dígitos) = Cria um novo commit desfazendo as alterações do commit especificado. Não é desfeito o commit, ele continua registrado no log. É feito um novo sem as mudanças e registrado como "REVERT".
 
-- git reset HEAD~1(o número indica quantos commits deseja-se resetar) = remove o commit. O commit referido não aparecerá mais no log
+- git reset HEAD~1(o número indica quantos commits deseja-se resetar) = remove o commit. O commit referido não aparecerá mais no log.
 
 -----
 <br>
@@ -246,3 +251,9 @@ ____Resolução de Conflitos____
 6) O merge pode ser feito direto pelo arquivo, ou pelo "editor merge". Nele, é apresentado o arquivo remoto, o local e um terceiro de como ficará o merge. 
 
 7) Caso as modificações sejam em arquivos diferentes, o push do commit do repositório local será rejeitado. Isso ocorre porque o local estará mais antigo em relação ao remoto. MAS, não haverá conflito quando for feito o pull, justamente por serem alterações em arquivos distintos.
+
+-----
+<br>
+
+____Colaborando com Projetos Open Soucer____
+-----
