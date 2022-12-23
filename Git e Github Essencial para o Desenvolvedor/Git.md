@@ -257,3 +257,26 @@ ____Resolução de Conflitos____
 
 ____Colaborando com Projetos Open Soucer____
 -----
+
+____Issues____
+
+Questões, tarefas, problemas a serem resolvidas no projeto. É uma excelente forma de gerenciar o projeto.
+
+!! Typo = erro de digitação.
+
+Quando é criado um Issue, eles são ordenados.
+
+O Assingnment serve para direcionar o issue para um dos integrantes da equipe.
+
+É possível definir um "Label"(Rótulo) para issue com intuito de agrupar esses apontamentos. 
+
+Após a correção, comentário, interação sobre a issue, é possível fechá-la.
+
+!! As instruções acima, são apenas executáveis pelo responsável pelo projeto. Terceiros, podem criar a issue e comentá-la.
+
+Ao commitar, é possível fechar as issues. Isso é feito, na mensagem do commit da seguinte forma:
+- Closes #número_da_issue_a_ser_fechada
+
+!! Caso haja problema de autenticação de usuário, é recomendado o seguinte comando:
+
+- git remote set-url origin https://usuário_gitGub@github.com/usuário_Git/repositório.git = configura o registro do repositório remoto. Força o referido usuário durante a autenticação no repositório descrito.
