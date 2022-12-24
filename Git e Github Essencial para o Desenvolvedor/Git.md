@@ -287,3 +287,8 @@ ____Forks____
 Fork é um recurso do GitHub que permite  que o repositório de um terceiro, seja "adquirido/importado" para sí próprio. Isto é, imagine que há um projeto no perfil da Google que seja de interesse. Através do fork, esse repositório será copiado para o seu perfil do GitHub e passará a integrar como um repositório seu, não tendo relação com o projeto original(os commits, colaborares, são independentes dele).
 
 -----
+____Pull Request____
+
+Através do Pull Request é feito uma solicitação para que as alterações feitas no projeto open source, sejam incorporadas no projeto original. É uma excelente forma de colaborar com outros projetos.
+
+Nota: Só é possível fazer Pull Requests em projetos que não são de autoria própria. Em caso de forks, é possível.
