@@ -280,3 +280,10 @@ Ao commitar, é possível fechar as issues. Isso é feito, na mensagem do commit
 !! Caso haja problema de autenticação de usuário, é recomendado o seguinte comando:
 
 - git remote set-url origin https://usuário_gitGub@github.com/usuário_Git/repositório.git = configura o registro do repositório remoto. Força o referido usuário durante a autenticação no repositório descrito.
+
+-----
+____Forks____
+
+Fork é um recurso do GitHub que permite  que o repositório de um terceiro, seja "adquirido/importado" para sí próprio. Isto é, imagine que há um projeto no perfil da Google que seja de interesse. Através do fork, esse repositório será copiado para o seu perfil do GitHub e passará a integrar como um repositório seu, não tendo relação com o projeto original(os commits, colaborares, são independentes dele).
+
+-----
