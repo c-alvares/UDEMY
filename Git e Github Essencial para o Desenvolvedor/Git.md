@@ -292,3 +292,13 @@ ____Pull Request____
 Através do Pull Request é feito uma solicitação para que as alterações feitas no projeto open source, sejam incorporadas no projeto original. É uma excelente forma de colaborar com outros projetos.
 
 Nota: Só é possível fazer Pull Requests em projetos que não são de autoria própria. Em caso de forks, é possível.
+
+Quando solicitamos ou recebemos uma pull request, ela funciona como uma issue. Será numerada conforme a sequência de issues. <br>
+Caso haja 4 issues, a pull request será a #5.
+
+No caso do recebimento de uma pull request, é possível se comunicar com o solicitante através da sessão "write" agradecendo, questionando sobre o código, etc.
+
+A visualização do arquivo/código é através da aba commits, no símbolo <>.
+
+- git fetch origin pull/#issue(número da pull request)/head:nome_da_branch_a_ser_criada = baixa o commit do pull request e cria uma branch para poder realizar o merge com o projeto.
+
