@@ -302,3 +302,10 @@ A visualização do arquivo/código é através da aba commits, no símbolo <>.
 
 - git fetch origin pull/#issue(número da pull request)/head:nome_da_branch_a_ser_criada = baixa o commit do pull request e cria uma branch para poder realizar o merge com o projeto.
 
+-----
+____Guia do Workflow padrão____
+
+- https://docs.github.com/pt/get-started/quickstart/github-flow
+
+-----
+
