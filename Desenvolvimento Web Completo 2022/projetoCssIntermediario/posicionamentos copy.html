@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos (static, relative, absolute, fixed)</title>
+    <style type="text/css">
+        
+        body {
+            background: #007fc7;
+        }
+        
+        #container {
+            background: #fff;
+            width: 800px;
+            margin: 10px auto;
+            /* a margem direita e esquerda será fajustada automaticamente, de forma responsiva */
+            padding: 10px;
+            position: relative;
+        }
+
+        h1 {
+            position: static;
+        }
+
+        p {
+            position: static;
+            width: 300px;
+        }
+
+        .absolute {
+            border: 1px solid red;
+            background-color: #f2f2f2;
+            position: absolute;
+            top: 80px;
+            right: 80px;
+
+        }
+
+        .fixed {
+            border: 1px solid red;
+            background-color: #f2f2f2;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            margin: 0px;
+        }
+
+        .relative {
+            border: 1px solid red;
+            position: relative;
+            top: 20px;
+            left: 80px;
+            right: 0px;
+            bottom: -10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Posicionamentos</h1>
+
+        <p>
+            P1 Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. 
+            Donec id sem gravida,
+            consectetur augue ut, molestie lorem.
+            Donec condimentum erat at sapien
+            volutpat malesuada.
+        </p>
+        <p class="absolute">
+            P2 Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. 
+            Donec id sem gravida,
+            consectetur augue ut, molestie lorem.
+            Donec condimentum erat at sapien
+            volutpat malesuada.
+        </p>
+        <p class="fixed">
+            P3 Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. 
+            Donec id sem gravida,
+            consectetur augue ut, molestie lorem.
+            Donec condimentum erat at sapien
+            volutpat malesuada.
+        </p>
+    </div>
+</body>
+</html>
+<!-- Fluxo padrão de documento, são os elementos do tipo bloco, alinhados a esquerda um abaixo do outro -->
+<!-- O posicionamento padrão é o estático -->
+<!-- Quando utilizamos posicionamento relativo, precisamos utilizar propriedades de deslocamento para movimentar o elemento -->
+<!-- Os elementos são top, right, bottom e left -->
+<!-- As movimentações ocorrem baseadas na posição inicial, de referência do fluxo padrão -->
+<!-- A posição absoulta é calculada em relação ao container que está o elemento, desde que este tenha uma posição definida. Caso contrário irá alinhar com o body -->
+<!-- O posicionamento fixo fica fixo em relação a janela do navegador -->
