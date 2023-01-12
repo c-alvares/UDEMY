@@ -1,0 +1,44 @@
+/* Seletor Universal */
+* {
+    border: 1px solid red;
+}
+
+/* Seletor de Texto */
+h1 {
+    color: green;
+}
+
+/* Seletor de Classe */
+.verde {
+    color: green;
+}
+
+p.verde {
+    color: green;
+}
+
+/* Seletor de ID */
+#cabecalho {
+    border: 1px solid blue;
+}
+
+/* Seletor de Filho (diretamente dentro do elemento) */
+li>a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Seletor Descendente (podem haver outros elementos entre os referidos) */
+div a {
+    color: green;
+}
+
+/* Seletor de Irmão Adjacente (seleciona o primeiro elemento <p> depois de qualquer elemento <h1>, mas não outros <p>) */
+h1+p {
+    color: red;
+}
+
+/* Seletor de Irmão Geral (Se houvesse dois elementos <p> que fossem irmãos de um <h1>, a regra se aplicaria aos dois. É necessário que sejam DEPOIS do <h1>) */
+h1~p {
+    color: pink;
+}
