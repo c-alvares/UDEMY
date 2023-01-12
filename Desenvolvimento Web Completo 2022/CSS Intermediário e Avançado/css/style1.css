@@ -1,0 +1,45 @@
+/* Herança e Especificadades */
+
+* {
+    border: 1px solid blue; /* Nesse caso, a regra é herdada por todos os elementos */
+}
+
+body {
+    color: red; /* É herdado pelos elementos dentro do body */
+    border: 1px solid blue; /* Não é herdado pelos elementos dentro do body */
+    background: gray; /* Também não é herdado */
+}
+
+/* No caso de seletores iguais, sempre o último será aplicado */
+/* A única exceção é se for utilizado o !important */
+/* O !important não deve ser utilizado com frequência para evitar confusão */
+
+p {
+    color: red !important;
+}
+
+p {
+    color: blue;
+}
+
+/* Se um seletor for mais específico que o outro, a regra mais específica será aplicada(terá precedência sobre regras mais gerais */
+
+* { /* 4 */
+    color: pink;
+}
+
+h2 { /* 3 */
+    color: purple;
+}
+
+h2.verde{ /* 2 - h2 que tem a classe verde */
+    color: green
+}
+
+h2 .verde{ /* Elemento classe verde dentro de um h2 */
+    color: green
+}
+
+h2#laranja { /* 1- O ID é ainda mais específico */
+    color: orangered;
+}
