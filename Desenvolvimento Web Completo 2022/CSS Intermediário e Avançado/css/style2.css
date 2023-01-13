@@ -26,10 +26,13 @@ ul a {
     text-decoration: none;
     text-indent: 40px;
     line-height: 40px;
-    background: url(../assets/menu.png) no-repeat left bottom;
+    background: #f7b600 url(../assets/menu.png) no-repeat left bottom;
 }
+/* É recomendado que seja utilizado uma cor de background para o caso de a imagem não carregar */
 
-a:hover {
+a:hover, .selecionado a {
     background-position: right bottom;
+    background-color: #ff9200;
     color: #fff;
 }
+/* É utilizada cor para caso a imagem não carregue, o efeito do hover seja executado */
