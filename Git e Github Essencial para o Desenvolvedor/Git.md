@@ -173,6 +173,9 @@ OU
 
 !! Após a criação da nova branch e realizadas as alterações (criação de arquivo por exemplo), é só adicionar e commitar. Deve-se realizar o checkout para master e fazer o merge. Após isso pode-se adicionar uma nova tag, e então realizar o push para o repositório remoto, para o "origin".
 
+!! Para baixar os dados de uma branch remota, deve-se fazer o comando abaixo, seguido de um git pull.
+- git switch nome_da_branch_remota
+
 -----
 
 <br>
