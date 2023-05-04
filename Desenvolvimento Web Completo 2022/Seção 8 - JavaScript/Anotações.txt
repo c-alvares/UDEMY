@@ -1,0 +1,7 @@
+JavaScript é uma linguagem de programação de alto nível, isto é, a codifição da linguagem é muito próxima da linguagem humana. Tornando a compreensão mais simples.
+
+É muito abrangente, pode ser usada do lado do cliente (client-side) ou seja, dentro dos browsers.
+Atualmente também é possível utilizar do lado do servidor (server-side). A dinâmica de comunicação que permite a comunicação com servidores é feita através do protocolo HTTP. 
+Ainda é possível utilizar criar aplicações desktop com o Electrom e aplicações mobile com o framework React-Native.
+
+JS é uma linguagem interpretada pelo browser.
