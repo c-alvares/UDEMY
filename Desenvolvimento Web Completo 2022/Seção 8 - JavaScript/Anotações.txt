@@ -5,3 +5,20 @@ Atualmente também é possível utilizar do lado do servidor (server-side). A di
 Ainda é possível utilizar criar aplicações desktop com o Electrom e aplicações mobile com o framework React-Native.
 
 JS é uma linguagem interpretada pelo browser.
+
+alert(teste)
+//Abre uma caixa de diálogo no navegador com a mensagem/valor atribuído no parâmetro.
+
+
+var texto = "Curso de JavaScript"
+document.write(texto)
+// document é um objeto que representa o dom. Todos os elementos HTML criados na página estão contidos dentro do objeto document.
+
+// Método utilizado para escrever valores dentro do browser, construido dentro do <body>, inserindo como um nó dentro do DOM, da árvore de elementos do navegador
+
+console.log(texto)
+// Mostra parâmetro inserido no inspecionar do navegador.
+
+
+Concatenação.
+
