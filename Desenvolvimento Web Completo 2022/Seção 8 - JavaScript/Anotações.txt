@@ -22,3 +22,6 @@ console.log(texto)
 
 Concatenação.
 
+prompt("Digite seu nome")
+// Método utilizado para aparecer um 'dialog' com input
+// O prompt sempre receberá os dados como stringf
