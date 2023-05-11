@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <script>
+        
+      var paramentro = prompt("Digite um número");
+
+      switch (parseInt(paramentro)) {
+        case 1:
+          // se paramentro === 1
+          document.write("Parametro 1");
+          break;
+
+        case 2:
+          // :se parametro === 2
+          document.write("Parametro 2");
+          break;
+
+        default:
+          //se parametro não encontrado
+          document.write("Default");
+      }
+
+      // Caso o break não seja colocado ao fim de cada case, as instruções subsequente serão processadas até que haja o término ou a interrupção por um break
+      // O default é opcional, ele é o equivalente ao else, caso nenhuma comparação com os cases ocorra. Logo, ele não é obrigatório
+      // !ATENÇÃO -> É necessário que a comparação seja idêntica, com valor e tipo (===), do contrário cairá no default
+
+    </script>
+  </head>
+  <body></body>
+</html>
