@@ -7,26 +7,39 @@
     <title>JavaScript</title>
     <script>
 
-    var num1 = prompt('Digite o valor de num1: ')
-    var num2 = prompt('Digite o valor de num2: ')
+    // var num1 = prompt('Digite o valor de num1: ')
+    // var num2 = prompt('Digite o valor de num2: ')
 
-    // casting - As variáveis acima recem string. O casting muda o tipo para Int
-    num1 = parseInt(num1)
-    num2 = parseInt(num2)
+    // // casting - As variáveis acima recem string. O casting muda o tipo para Int
+    // num1 = parseInt(num1)
+    // num2 = parseInt(num2)
 
-    document.write('A soma entre num1 e num2 é ' + (num1 + num2) + '<br/ >')  
-    document.write('A subtração entre num1 e num2 é ' + (num1 - num2) + '<br/ >') 
-    document.write('A multiplicação entre num1 e num2 é ' + (num1 * num2) + '<br/ >') 
-    document.write('A divisão entre num1 e num2 é ' + (num1 / num2) + '<br/ >') 
-    document.write('O módulo entre num1 e num2 é ' + (num1 % num2) + '<br/ >') 
-    document.write('O incremento pré de ' + num1 + 'é: ' + (++num1) + '<br/ >') 
-    document.write('O incremento pós de ' + num1 + 'é: ' + (num1++) + '<br/ >')
-    document.write(num1 + '<br/ >')
-    // As operações de incremento ou decremento, caso sejam pré, atualizarão a variável dentro do contexto da instrução.
-    // Caso seja utilizado a pós, a instrução será executada primeiro, então será realizada a operação. 
-    document.write('O decremento pré de ' + num1 + 'é: ' + (--num1) + '<br/ >')
-    document.write('O decremento pós de ' + num1 + 'é: ' + (num1--) + '<br/ >')
-    document.write(num1 + '<br/ >')
+    // document.write('A soma entre num1 e num2 é ' + (num1 + num2) + '<br/ >')  
+    // document.write('A subtração entre num1 e num2 é ' + (num1 - num2) + '<br/ >') 
+    // document.write('A multiplicação entre num1 e num2 é ' + (num1 * num2) + '<br/ >') 
+    // document.write('A divisão entre num1 e num2 é ' + (num1 / num2) + '<br/ >') 
+    // document.write('O módulo entre num1 e num2 é ' + (num1 % num2) + '<br/ >') 
+    // document.write('O incremento pré de ' + num1 + 'é: ' + (++num1) + '<br/ >') 
+    // document.write('O incremento pós de ' + num1 + 'é: ' + (num1++) + '<br/ >')
+    // document.write(num1 + '<br/ >')
+    // // As operações de incremento ou decremento, caso sejam pré, atualizarão a variável dentro do contexto da instrução.
+    // // Caso seja utilizado a pós, a instrução será executada primeiro, então será realizada a operação. 
+    // document.write('O decremento pré de ' + num1 + 'é: ' + (--num1) + '<br/ >')
+    // document.write('O decremento pós de ' + num1 + 'é: ' + (num1--) + '<br/ >')
+    // document.write(num1 + '<br/ >')
+
+    var teste = 10
+    var testeString = 'Olá '
+
+    // teste = teste + 5
+    // teste += 5
+    // teste -= 5
+    // teste *= 5
+    // teste /= 5
+    teste %= 3
+    testeString += 'Jorge'
+    document.write(teste)
+    document.write(testeString)
 
     </script>
   </head>
