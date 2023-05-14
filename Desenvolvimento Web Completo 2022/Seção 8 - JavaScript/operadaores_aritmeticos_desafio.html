@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 174</title>
+    <script>
+      
+    // Entrada de dados
+    var nome = prompt('Digite seu nome: ')
+    var altura = prompt('Digite sua altura em cm: ')
+    var peso = prompt('Digite seu peso: ')
+
+    // Conversão dos dados de String para Float
+    altura = parseFloat(altura)
+    peso = parseFloat(peso)
+    
+    // Conversão da altura de centímetros para metros
+    altura /= 100
+
+    // Cálculo do IMC
+    IMC = peso / (altura * altura)
+
+    // Variável para receber a classificação
+    var classificacao
+
+    // Classificação do IMC baseado no resultado do cálculo
+    if (IMC < 16 ) {
+        classificao = "Baixo peso muito grave"
+      } else if (IMC >= 16 && IMC < 17) {
+        classificao = "Baixo peso grave"
+      } else if (IMC >=17 && IMC < 18.5) {
+        classificacao = "Baixo peso"
+      } else if (IMC >=18.5 && IMC < 25) {
+        classificacao = "Peso normal"
+      } else if (IMC >=25 && IMC < 30) {
+        classificacao = "Sobrepeso"
+      } else if (IMC >=30 && IMC < 35) {
+        classificacao = "Obesidade grau I"
+      } else if (IMC >=35 && IMC < 40) {
+        classificacao = "Obesidade grau II"
+      } else {
+        classificacao = "Obesidade grau III"
+      }
+      
+      document.write(nome + " possui índice de massa corporal igual a " + IMC + ", sendo classificado como: " + classificacao)
+
+    </script>
+  </head>
+  <body></body>
+</html>
