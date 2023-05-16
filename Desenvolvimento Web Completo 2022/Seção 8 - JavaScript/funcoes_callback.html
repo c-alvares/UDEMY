@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <script>
+      // Funções de callback são funções encaminhadas como parâmetros para outras funções
+      // Comum em aplicações com processamento assíncrono
+
+      function exibirArtigo(id, calbackSucesso, callbackErro) {
+        // lógica: recuperar o id via requisição http
+        if (true) {
+          callbackSucesso(
+            "Funções de callback em JS",
+            "Funções de callback são muito utilizadas..."
+          );
+        } else {
+          calbackErro("Erro ao recuperar os dados");
+        }
+      }
+
+    //Técnica de Wraper: encapsulando funções anônimas(sem nome) dentro de variáveis
+      var callbackSucesso = function(titulo, descricao) {
+        document.write('<h1>' + titulo + '</h1>')
+        document.write('<hr />')
+        document.write('<p>' + descricao + '</p>')
+        // função void (sem retorno)
+      }
+
+      var callbackErro = function(erro) {
+        document.write('<p><b>Erro:</b> ' + erro + '</p>')
+        // função void (sem retorno)
+      }
+
+      exibirArtigo( 1, callbackSucesso, callbackErro )
+    //   !!!! ATENÇÃO !!!!
+    // Se uma função for passada como parâmetro, caso ela possua os (), indica que o interpretador do JS executará a função nesse dado momento
+    // Caso seja passada sem os (), a função será passada, e poderá ser chamada dentro da outra função
+    </script>
+  </head>
+  <body></body>
+</html>
