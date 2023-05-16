@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <script>
+      // Quando é informado um método, por ser uma função, tem que ser utilizado os ()
+      // No caso de uma propriedade, não é preciso usar os ()
+
+      // propriedade/atributo length
+      document.write("Jorge Sant Ana".length);
+
+      // método charAt()
+      document.write("Jorge Sant Ana".charAt(7));
+
+      // método indexOf(12) - Faz diferenciação entre caracteres maiúsculos e minúsculos
+      // Se o retorno for -1 significa que não há a ocorrência do caractere informado para checagem
+      var nome = "Jorge Sant Ana";
+      document.write(nome.indexOf("a"));
+
+      // método replace
+      document.write(nome.replace("Sant Ana", "Silva"));
+
+      // método substr
+      document.write(nome.substr(6, 4));
+
+      // método toLowerCase
+      document.write(nome.toLowerCase());
+
+      // método toUpperrCase
+      document.write(nome.toUpperrCase());
+
+      // método trim
+      document.write("-" + nome.trim() + "-");
+
+      // Para mais métodos: https://www.w3schools.com/js/js_string_methods.asp
+    </script>
+  </head>
+  <body></body>
+</html>
