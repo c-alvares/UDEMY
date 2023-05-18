@@ -11,21 +11,75 @@
     var data = new Date()
 
     // 17/05/2023
-    document.write(data.getDate())
+    // document.write(data.getDate())
 
     // getMonth() retorna os meses de 0 até 11
-    document.write(data.getMonth() + 1)
+    // document.write(data.getMonth() + 1)
 
-    document.write(data.getFullYear())
+    // document.write(data.getFullYear())
 
-    document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+    // document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
 
-
+    /*
+    // Adicionar/remover dias
+    document.write(data.toString())
+    data.setDate(data.getDate() - 720)
     document.write('<hr />')
-    document.write(data)
+    document.write(data.toString( ))
+    data.write('<br /><br /><hr />')
+    
+    // Adicionar/remover meses
+    document.write(data.toString())
+    data.setDate(data.getDate() + 720)
+    document.write('<hr />')
+    document.write(data.toString( ))
+    data.write('<br /><br /><hr />')
 
+    // Adicionar / remover meses
+    data.setMonth(data.getMonth() - 720)
+    document.write(data.toString( ))
+    document.write('<hr />')
 
+    // Adicionar / remover anos
+    document.write(data.toString( ))
+    data.setFullYear(data.getFullYear() -1)
+    document.write('<hr />')
+    document.write(data.toString( ))
+    data.write('<br /><br /><hr />')
+    */
+    
+    // 15/01/2017
+    var data1 = new Date(2017, 0, 15);
+    
+    
+    // 23/02/2017
+    var data2 = new Date(2017, 1, 23);
 
+    document.write(data1.toString())
+    document.write('<hr />')
+    document.write(data2.toString())
+
+    document.write('<br /><br /><hr />')
+
+    // converte datas para algo que possamos calcular
+    document.write(data1.getTime())
+    document.write('<hr />')
+    document.write(data2.getTime())
+
+    // recupera datas apartir de 1 de janeiro de 1970
+    
+    var milissegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+    document.write('<br /><br /><hr />')
+    // encontrar a quantidade de milissegundos entre data1 e data2
+    document.write(milissegundos_entre_datas)
+    
+    // 1 dia tem 24h, 1h tem 60 minutos, 1 minuto tem 60 segundos, 1 segundo tem 1000 milissegundos
+    // Quantos milissegundos existem em um dia?
+    var milissegundos_por_dia = (1*24*60*60*1000)
+    document.write(' 1 dia tem: ' + milissegundos_por_dia + ' milissegundos')
+    
+    document.write('<br /><br /><hr />')
+    document.write('A diferenteçã entre data1 e data2 é de ' + Math.ceil(milissegundos_entre_datas / milissegundos_por_dia) + ' dias')
     </script>
   </head>
   <body></body>
