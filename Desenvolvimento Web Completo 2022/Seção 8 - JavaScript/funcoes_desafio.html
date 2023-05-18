@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <script>
+
+    var n1 = parseFloat(prompt("Informe um número: "))
+    var operacao = prompt("Qual operação deseja, soma ou subtração? ")
+    var n2 = parseFloat(prompt("Informe outro número: "))
+    
+    var resultado
+    
+    function calcular(n1, n2, operacao) {
+        if ( operacao === 'soma' ) {
+            resultado = n1 + n2;
+        } else {
+            resultado = n1 - n2
+        }
+        
+        return resultado
+    }
+
+    document.write("O resultado é: " + calcular(n1, n2, operacao));
+
+
+    </script>
+  </head>
+  <body></body>
+</html>
