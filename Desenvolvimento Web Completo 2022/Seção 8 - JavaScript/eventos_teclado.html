@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <script>
+        function acao(){
+            alert('Evento disparado')
+        }
+
+        function acao2(){
+            alert('O cursor do mouse deixou a região do elemento')
+        }
+
+
+    </script>
+  </head>
+  <body>
+      
+      <!-- Antes da tecla ser solta, quando é "abaixada" -->
+      <input onkeydown="acao()" type="text">
+      
+      <!-- Antes da tecla ser liberada -->
+      <!-- onkeypress só funciona com teclas que possuem um caractere. Teclas como 'Ctrl', 'Enter', 'Shift', não funcionam-->
+    <input onkeypress="acao()" type="text">
+
+    <!-- Após a tecla ser solta, quando "se levanta" -->
+    <input onkeyup="acao()" type="text">
+  </body>
+</html>
