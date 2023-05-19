@@ -25,3 +25,6 @@ Concatenação.
 prompt("Digite seu nome")
 // Método utilizado para aparecer um 'dialog' com input
 // O prompt sempre receberá os dados como stringf
+
+
+DOM - é o document object model: uma API que permite o acesso via JavaScript aos elementos da página, do html
