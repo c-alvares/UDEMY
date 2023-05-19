@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <script>
+        function acao(){
+            alert('Elemetno foi clicado')
+        }
+
+        function acao2(){
+            alert('O cursor do mouse deixou a região do elemento')
+        }
+
+
+    </script>
+  </head>
+  <body>
+    <!-- <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px"></div>
+    <div ondblclick="acao()" style="background: #ccc1; height: 150px; width: 150px"></div>
+    <div onmouseup="acao()" style="background: #ccc9; height: 150px; width: 150px"></div>
+    <div onmouseover="acao()" style="background: #ccc7; height: 150px; width: 150px"></div>
+    <div onmouseout="acao()" style="background: #ccc3; height: 150px; width: 150px"></div> -->
+    <!-- É possível combinar eventos -->
+    <div onmouseout="acao()" onmouseout="acao2()" style="background: #ccc3; height: 150px; width: 150px"></div>
+
+    <!-- ATENÇÃO! Nem todos os eventos estão disponíveis para todas a tags htmls -->
+  </body>
+</html>
